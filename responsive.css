@@ -1,0 +1,230 @@
+@media screen and (max-width: 767px) {
+  header nav .menu {
+    display: none;
+  }
+
+  label {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+    color: #e57c23;
+  }
+
+  label:hover {
+    color: #f8f1f1;
+  }
+
+  label .close-btn {
+    display: none;
+  }
+
+  #check:checked ~ header nav .menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
+
+  #check:checked ~ header nav ul {
+    z-index: 2;
+    position: fixed;
+    background: rgba(255, 114, 196, 0.473);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #check:checked ~ header nav .menu a {
+    flex-direction: column;
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+  #check:checked ~ header label .menu-btn {
+    display: none;
+  }
+
+  #check:checked ~ header label .close-btn {
+    z-index: 2;
+    display: block;
+    position: fixed;
+  }
+
+  label .menu-btn {
+    position: absolute;
+    margin-top: -13px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+
+  /* Start-title */
+  .title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  /* End-title */
+
+  /* Start-text */
+  .text {
+    margin-bottom: 30px;
+    font-size: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+
+  /* End-text */
+
+  /* Start-sosmed */
+  .sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right img {
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .logo h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  header nav .menu {
+    display: none;
+  }
+
+  label {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+    color: #e57c23;
+  }
+
+  label:hover {
+    color: #f8f1f1;
+  }
+
+  label .close-btn {
+    display: none;
+  }
+
+  #check:checked ~ header nav .menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~ header nav ul {
+    z-index: 2;
+    position: fixed;
+    background: rgba(114, 223, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #check:checked ~ header nav .menu a {
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+  #check:checked ~ header label .menu-btn {
+    display: none;
+  }
+
+  #check:checked ~ header label .close-btn {
+    z-index: 2;
+    display: block;
+    position: fixed;
+  }
+
+  label .menu-btn {
+    position: absolute;
+    margin-top: -13px;
+  }
+
+  label .close-btn {
+    margin-top: -13px;
+  }
+
+  .logo a {
+    font-size: 25px;
+  }
+
+  .title,
+  .text {
+    margin-left: 25px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu ul {
+    width: auto;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  header nav {
+    justify-content: space-around;
+    gap: 3rem;
+  }
+
+  .title,
+  .text {
+    margin-left: 25px;
+  }
+
+  .tilte {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    margin-bottom: 0;
+  }
+}

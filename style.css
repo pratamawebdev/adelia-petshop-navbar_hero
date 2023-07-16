@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Signika+Negative:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f1f1;
+}
+
+/* Start-Wrapper */
+.wrapper {
+  padding: 1.7rem 0 2rem;
+  width: 100%;
+  overflow: hidden;
+  background: url("srcs/image/Animated Shape.svg");
+  height: 100vh;
+}
+/* End-Wrapper */
+
+/* Start-Header */
+header {
+  width: 100%;
+}
+/* End-Header */
+
+/* Start-Nav */
+nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End-Nav */
+
+/* Start-logo */
+.logo a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  color: #e57c23;
+}
+
+.logo a span {
+  color: #f8f1f1;
+}
+/* End-logo */
+
+/* Start-menu */
+.menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 3rem;
+  display: inline-block;
+  transition: 0.3s;
+  color: #e57c23;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  transform: scale(1.05);
+}
+/* End-menu */
+
+/* Start-btn */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.7rem;
+  background-color: #f8f1f1;
+  border-radius: 16px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #f8f1f1;
+  transform: scale(1);
+}
+/* End-btn */
+
+/* Start-hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+/* End-Hero */
+
+.right img {
+  width: 330px;
+  object-fit: cover;
+}
+
+/* Start-title */
+.title {
+  font-size: 2rem;
+  color: #e57c23;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.title h5 {
+  color: #e8aa42;
+}
+/* End-title */
+
+/* Start-text */
+.text {
+  color: #f8f1f1;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+/* End-text */
+
+/* Start-sosmed */
+.sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+}
+
+.sosmed a {
+  position: relative;
+  color: #e8aa42;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.sosmed a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.sosmed a:hover {
+  transform: scale(1.5);
+}
+/* End-sosmed */
+
+label {
+  display: none;
+}
+
+#check {
+  z-index: 4;
+  display: none;
+}
